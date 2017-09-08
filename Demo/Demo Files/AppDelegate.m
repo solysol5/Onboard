@@ -81,7 +81,7 @@ static NSString * const kUserHasOnboardedKey = @"user_has_onboarded";
     OnboardingContentViewController *welcomePage = [OnboardingContentViewController contentWithTitle:@"Welcome to MassCheck" body:@"Swipe to start tutorial" image:[UIImage imageNamed:@"MassTrade-Favicon"] buttonText:nil action:nil];
     
     // Step 1) Review & Confirm Device Information
-    OnboardingContentViewController *firstPage = [OnboardingContentViewController contentWithTitle:@"Review & Confirm" body:@"Ensure the device information is correct." image:[UIImage imageNamed:@"step1"] buttonText:@"" action:nil];
+    OnboardingContentViewController *firstPage = [OnboardingContentViewController contentWithTitle:@"Review" body:@"Ensure the device information is correct." image:[UIImage imageNamed:@"step1"] buttonText:@"" action:nil];
     firstPage.movesToNextViewController = YES;
     firstPage.iconHeight = 280;
     firstPage.iconWidth = 280;
@@ -118,7 +118,7 @@ static NSString * const kUserHasOnboardedKey = @"user_has_onboarded";
 
     
     // Final Step) Get Started
-    OnboardingContentViewController *finalPage = [OnboardingContentViewController contentWithTitle:@"Seriously Though" body:@"Kudos to the photographer." image:[UIImage imageNamed:@"yellow"] buttonText:@"Get Started" action:^{
+    OnboardingContentViewController *finalPage = [OnboardingContentViewController contentWithTitle:@"That's It!" body:nil image:[UIImage imageNamed:@"MassTrade-Favicon"] buttonText:@"Get Started" action:^{
         [self handleOnboardingCompletion];
     }];
     
