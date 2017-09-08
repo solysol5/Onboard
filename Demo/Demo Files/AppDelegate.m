@@ -111,7 +111,7 @@ static NSString * const kUserHasOnboardedKey = @"user_has_onboarded";
     fifthPage.iconWidth = 280;
     
     // Step 6) Screen Shot | Get Paid
-    OnboardingContentViewController *sixthPage = [OnboardingContentViewController contentWithTitle:@"Get Paid" body:@"Screenshot and take to nearest store for payment" image:[UIImage imageNamed:@"step6"] buttonText:@"" action:nil];
+    OnboardingContentViewController *sixthPage = [OnboardingContentViewController contentWithTitle:@"Get Paid" body:@"Screenshot and take to store for payment." image:[UIImage imageNamed:@"step6"] buttonText:@"" action:nil];
     sixthPage.movesToNextViewController = YES;
     sixthPage.iconHeight = 280;
     sixthPage.iconWidth = 280;
