@@ -48,6 +48,13 @@
 		5BFFBBB21BF847670083BEC3 /* video1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 5BFFBBAF1BF847670083BEC3 /* video1.mp4 */; };
 		5BFFBBB31BF847670083BEC3 /* video2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 5BFFBBB01BF847670083BEC3 /* video2.mp4 */; };
 		5BFFBBB41BF847670083BEC3 /* video3.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 5BFFBBB11BF847670083BEC3 /* video3.mp4 */; };
+		BF399C6C1F632CE2007E53F8 /* MassTrade-Favicon.png in Resources */ = {isa = PBXBuildFile; fileRef = BF399C6B1F632CE2007E53F8 /* MassTrade-Favicon.png */; };
+		BF399C7F1F635848007E53F8 /* step1.png in Resources */ = {isa = PBXBuildFile; fileRef = BF399C791F635848007E53F8 /* step1.png */; };
+		BF399C801F635848007E53F8 /* step2.png in Resources */ = {isa = PBXBuildFile; fileRef = BF399C7A1F635848007E53F8 /* step2.png */; };
+		BF399C811F635848007E53F8 /* step3.png in Resources */ = {isa = PBXBuildFile; fileRef = BF399C7B1F635848007E53F8 /* step3.png */; };
+		BF399C821F635848007E53F8 /* step4.png in Resources */ = {isa = PBXBuildFile; fileRef = BF399C7C1F635848007E53F8 /* step4.png */; };
+		BF399C831F635848007E53F8 /* step5.png in Resources */ = {isa = PBXBuildFile; fileRef = BF399C7D1F635848007E53F8 /* step5.png */; };
+		BF399C841F635848007E53F8 /* step6.png in Resources */ = {isa = PBXBuildFile; fileRef = BF399C7E1F635848007E53F8 /* step6.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +116,13 @@
 		5BFFBBAF1BF847670083BEC3 /* video1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video1.mp4; sourceTree = "<group>"; };
 		5BFFBBB01BF847670083BEC3 /* video2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video2.mp4; sourceTree = "<group>"; };
 		5BFFBBB11BF847670083BEC3 /* video3.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video3.mp4; sourceTree = "<group>"; };
+		BF399C6B1F632CE2007E53F8 /* MassTrade-Favicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MassTrade-Favicon.png"; sourceTree = "<group>"; };
+		BF399C791F635848007E53F8 /* step1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = step1.png; sourceTree = "<group>"; };
+		BF399C7A1F635848007E53F8 /* step2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = step2.png; sourceTree = "<group>"; };
+		BF399C7B1F635848007E53F8 /* step3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = step3.png; sourceTree = "<group>"; };
+		BF399C7C1F635848007E53F8 /* step4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = step4.png; sourceTree = "<group>"; };
+		BF399C7D1F635848007E53F8 /* step5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = step5.png; sourceTree = "<group>"; };
+		BF399C7E1F635848007E53F8 /* step6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = step6.png; sourceTree = "<group>"; };
 		F3D2BE1A1BEB5A33000C63A6 /* OnboardingContentViewController_Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OnboardingContentViewController_Private.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -139,6 +153,13 @@
 		270CB0B419BABF8C00F051B3 /* media */ = {
 			isa = PBXGroup;
 			children = (
+				BF399C791F635848007E53F8 /* step1.png */,
+				BF399C7A1F635848007E53F8 /* step2.png */,
+				BF399C7B1F635848007E53F8 /* step3.png */,
+				BF399C7C1F635848007E53F8 /* step4.png */,
+				BF399C7D1F635848007E53F8 /* step5.png */,
+				BF399C7E1F635848007E53F8 /* step6.png */,
+				BF399C6B1F632CE2007E53F8 /* MassTrade-Favicon.png */,
 				5BFFBBAF1BF847670083BEC3 /* video1.mp4 */,
 				5BFFBBB01BF847670083BEC3 /* video2.mp4 */,
 				5BFFBBB11BF847670083BEC3 /* video3.mp4 */,
@@ -311,7 +332,11 @@
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Mike Amaral";
 				TargetAttributes = {
+					273D50AA19A1A34F00E38DB2 = {
+						DevelopmentTeam = LA9458AYCR;
+					};
 					273D50C519A1A34F00E38DB2 = {
+						DevelopmentTeam = LA9458AYCR;
 						TestTargetID = 273D50AA19A1A34F00E38DB2;
 					};
 				};
@@ -340,21 +365,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				27B4BCEB19BB5D9B0066EC81 /* testtube.png in Resources */,
+				BF399C7F1F635848007E53F8 /* step1.png in Resources */,
 				27B4BCE919BB5D9B0066EC81 /* layers.png in Resources */,
 				27B4BCE819BB5D9B0066EC81 /* headphones.png in Resources */,
 				270CB0C519BAC93700F051B3 /* space3.png in Resources */,
 				27B4BCED19BB5F6E0066EC81 /* purple.png in Resources */,
+				BF399C6C1F632CE2007E53F8 /* MassTrade-Favicon.png in Resources */,
 				0F0321581CA3AD81007FD86A /* Default-568h@2x.png in Resources */,
 				5BFFBBB31BF847670083BEC3 /* video2.mp4 in Resources */,
 				27B4BCF119BB657F0066EC81 /* charcoal.png in Resources */,
 				27535AD219BBD1F00017811B /* yellowbg.png in Resources */,
+				BF399C811F635848007E53F8 /* step3.png in Resources */,
+				BF399C801F635848007E53F8 /* step2.png in Resources */,
 				27009D051A05A24800CFA5B5 /* space age.ttf in Resources */,
 				273D50B919A1A34F00E38DB2 /* InfoPlist.strings in Resources */,
 				27B4BCEA19BB5D9B0066EC81 /* shark.png in Resources */,
+				BF399C821F635848007E53F8 /* step4.png in Resources */,
 				2789AD7019A2DE53002117FE /* yellow.png in Resources */,
 				27009CFF1A05991300CFA5B5 /* sun.mp4 in Resources */,
 				270CB0C319BAC93700F051B3 /* space1.png in Resources */,
 				27009D011A059F6B00CFA5B5 /* sf-outer-limits.upright.ttf in Resources */,
+				BF399C841F635848007E53F8 /* step6.png in Resources */,
 				27535AD019BBCA070017811B /* tree.png in Resources */,
 				270CB0C619BAC93700F051B3 /* space4.png in Resources */,
 				5BFFBBB21BF847670083BEC3 /* video1.mp4 in Resources */,
@@ -367,6 +398,7 @@
 				2789AD6F19A2DE53002117FE /* red.png in Resources */,
 				2789AD6E19A2DE53002117FE /* blue.png in Resources */,
 				5BFFBBB41BF847670083BEC3 /* video3.mp4 in Resources */,
+				BF399C831F635848007E53F8 /* step5.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -509,10 +541,11 @@
 		273D50D819A1A34F00E38DB2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = LA9458AYCR;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Demo Files/Supporting Files/Onboard-Prefix.pch";
 				INFOPLIST_FILE = "Demo Files/Supporting Files/Onboard-Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.MikeAmaral.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.MassMobile.Onboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -521,10 +554,11 @@
 		273D50D919A1A34F00E38DB2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = LA9458AYCR;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Demo Files/Supporting Files/Onboard-Prefix.pch";
 				INFOPLIST_FILE = "Demo Files/Supporting Files/Onboard-Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.MikeAmaral.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.MassMobile.Onboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -534,6 +568,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Onboard.app/Onboard";
+				DEVELOPMENT_TEAM = LA9458AYCR;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -557,6 +592,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Onboard.app/Onboard";
+				DEVELOPMENT_TEAM = LA9458AYCR;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",

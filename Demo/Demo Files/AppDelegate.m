@@ -67,23 +67,66 @@ static NSString * const kUserHasOnboardedKey = @"user_has_onboarded";
 }
 
 - (OnboardingViewController *)generateStandardOnboardingVC {
-    OnboardingContentViewController *firstPage = [OnboardingContentViewController contentWithTitle:@"What A Beautiful Photo" body:@"This city background image is so beautiful." image:[UIImage imageNamed:@"blue"] buttonText:@"Enable Location Services" action:^{
-        [[[UIAlertView alloc] initWithTitle:nil message:@"Here you can prompt users for various application permissions, providing them useful information about why you'd like those permissions to enhance their experience, increasing your chances they will grant those permissions." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
-    }];
     
-    OnboardingContentViewController *secondPage = [OnboardingContentViewController contentWithTitle:@"I'm so sorry" body:@"I can't get over the nice blurry background photo." image:[UIImage imageNamed:@"red"] buttonText:@"Connect With Facebook" action:^{
-        [[[UIAlertView alloc] initWithTitle:nil message:@"Prompt users to do other cool things on startup. As you can see, hitting the action button on the prior page brought you automatically to the next page. Cool, huh?" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
-    }];
+    
+    /*
+     |--------------------------------------------------------------------------
+     | Walkthrough Steps/Screens
+     |--------------------------------------------------------------------------
+     |
+     |
+     */
+    
+    // Step 0) Welcome
+    OnboardingContentViewController *welcomePage = [OnboardingContentViewController contentWithTitle:@"Welcome to MassCheck" body:@"Swipe to start tutorial" image:[UIImage imageNamed:@"MassTrade-Favicon"] buttonText:nil action:nil];
+    
+    // Step 1) Review & Confirm Device Information
+    OnboardingContentViewController *firstPage = [OnboardingContentViewController contentWithTitle:@"Review & Confirm" body:@"Ensure the device information is correct." image:[UIImage imageNamed:@"step1"] buttonText:@"" action:nil];
+    firstPage.movesToNextViewController = YES;
+    firstPage.iconHeight = 280;
+    firstPage.iconWidth = 280;
+    
+    // Step 2) Allow access to your mic, Wi-Fi, Bluetooth, Camera, etc.
+    OnboardingContentViewController *secondPage = [OnboardingContentViewController contentWithTitle:@"Allow Access" body:@"Enable Wi-Fi, Bluetooth, Camera etc." image:[UIImage imageNamed:@"step2"] buttonText:@"" action:nil];
     secondPage.movesToNextViewController = YES;
-    secondPage.viewDidAppearBlock = ^{
-        [[[UIAlertView alloc] initWithTitle:@"Welcome!" message:@"You've arrived on the second page, and this alert was displayed from within the page's viewDidAppearBlock." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
-    };
+    secondPage.iconHeight = 280;
+    secondPage.iconWidth = 280;
     
-    OnboardingContentViewController *thirdPage = [OnboardingContentViewController contentWithTitle:@"Seriously Though" body:@"Kudos to the photographer." image:[UIImage imageNamed:@"yellow"] buttonText:@"Get Started" action:^{
+    // Step 3) Test
+    OnboardingContentViewController *thirdPage = [OnboardingContentViewController contentWithTitle:@"Test" body:@"Run each diagnostic function." image:[UIImage imageNamed:@"step3"] buttonText:@"" action:nil];
+    thirdPage.movesToNextViewController = YES;
+    thirdPage.iconHeight = 280;
+    thirdPage.iconWidth = 280;
+    
+    // Step 4) Confirm Results
+    OnboardingContentViewController *fourthPage = [OnboardingContentViewController contentWithTitle:@"Confirm Results" body:@"Review & re-Test if necessary." image:[UIImage imageNamed:@"step4"] buttonText:@"" action:nil];
+    fourthPage.movesToNextViewController = YES;
+    fourthPage.iconHeight = 280;
+    fourthPage.iconWidth = 280;
+    
+    // Step 5) Submit
+    OnboardingContentViewController *fifthPage = [OnboardingContentViewController contentWithTitle:@"Submit" body:@"Send your results to MassTrade." image:[UIImage imageNamed:@"step5"] buttonText:@"" action:nil];
+    fifthPage.movesToNextViewController = YES;
+    fifthPage.iconHeight = 280;
+    fifthPage.iconWidth = 280;
+    
+    // Step 6) Screen Shot | Get Paid
+    OnboardingContentViewController *sixthPage = [OnboardingContentViewController contentWithTitle:@"Get Paid" body:@"Screenshot and take to nearest store for payment" image:[UIImage imageNamed:@"step6"] buttonText:@"" action:nil];
+    sixthPage.movesToNextViewController = YES;
+    sixthPage.iconHeight = 280;
+    sixthPage.iconWidth = 280;
+
+    
+    // Final Step) Get Started
+    OnboardingContentViewController *finalPage = [OnboardingContentViewController contentWithTitle:@"Seriously Though" body:@"Kudos to the photographer." image:[UIImage imageNamed:@"yellow"] buttonText:@"Get Started" action:^{
         [self handleOnboardingCompletion];
     }];
     
-    OnboardingViewController *onboardingVC = [OnboardingViewController onboardWithBackgroundImage:[UIImage imageNamed:@"street"] contents:@[firstPage, secondPage, thirdPage]];
+    
+    
+    
+    // Register Steps
+    OnboardingViewController *onboardingVC = [OnboardingViewController onboardWithBackgroundImage:[UIImage imageNamed:@"street"] contents:@[welcomePage, firstPage, secondPage, thirdPage, fourthPage, fifthPage, sixthPage, finalPage]];
     onboardingVC.shouldFadeTransitions = YES;
     onboardingVC.fadePageControlOnLastPage = YES;
     onboardingVC.fadeSkipButtonOnLastPage = YES;
